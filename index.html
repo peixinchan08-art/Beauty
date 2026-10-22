@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlowMart | Buy &amp; Sell Beauty Products in Malaysia</title>
+  <meta name="description" content="Buy and sell skincare, makeup and beauty products from trusted sellers in Malaysia.">
+  <meta property="og:title" content="GlowMart | Buy &amp; Sell Beauty Products in Malaysia">
+  <meta property="og:description" content="Buy and sell skincare, makeup and beauty products from trusted sellers in Malaysia.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="nav" class="site-header"></header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Find your shade. Meet your seller.</h1>
+      <p>Skincare, makeup and more from people who use what they sell. Pick a category below, or open your own shop in a minute.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#shop">Browse products</a>
+        <a class="btn ghost" href="seller.html">Start selling</a>
+      </div>
+      <div class="swatches" id="swatches" role="group" aria-label="Filter by category"></div>
+    </div>
+  </section>
+
+  <main class="container" id="shop">
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search products" aria-label="Search products" autocomplete="off">
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+    <div class="grid" id="grid"><p class="empty">Loading products...</p></div>
+  </main>
+
+  <footer id="footer"></footer>
+  <script type="module" src="shop.js"></script>
+</body>
+</html>

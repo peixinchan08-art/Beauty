@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in or Sign up | GlowMart</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="nav" class="site-header"></header>
+
+  <main class="container">
+    <div class="narrow">
+      <div class="page-title"><h1>Welcome</h1></div>
+      <div class="tabs" role="tablist">
+        <button type="button" role="tab" id="tabLogin" aria-selected="true">Log in</button>
+        <button type="button" role="tab" id="tabSignup" aria-selected="false">Create account</button>
+      </div>
+
+      <form id="loginForm" class="form">
+        <label>Email
+          <input name="email" type="email" required autocomplete="email">
+        </label>
+        <label>Password
+          <input name="password" type="password" required autocomplete="current-password">
+        </label>
+        <button class="btn" type="submit">Log in</button>
+      </form>
+
+      <form id="signupForm" class="form" hidden>
+        <label>Your name
+          <input name="name" required maxlength="100" autocomplete="name">
+        </label>
+        <label>Email
+          <input name="email" type="email" required autocomplete="email">
+        </label>
+        <label>Password (at least 8 characters)
+          <input name="password" type="password" required minlength="8" autocomplete="new-password">
+        </label>
+        <label>I want to
+          <select name="role" id="role">
+            <option value="buyer">Buy products</option>
+            <option value="seller">Buy and sell products</option>
+          </select>
+        </label>
+        <label id="waWrap" hidden>WhatsApp number (buyers will use it to reach you)
+          <input name="whatsapp" inputmode="tel" maxlength="20" placeholder="0123456789">
+        </label>
+        <button class="btn" type="submit">Create account</button>
+      </form>
+
+      <p id="msg" class="msg" hidden style="margin-top:14px"></p>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+  <script type="module" src="login.js"></script>
+</body>
+</html>

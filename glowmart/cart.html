@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart | GlowMart</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="nav" class="site-header"></header>
+
+  <main class="container">
+    <div class="page-title"><h1>Your cart</h1></div>
+
+    <div id="cartList"></div>
+    <div id="summary" class="summary" hidden></div>
+
+    <section id="checkout" class="panel" hidden>
+      <h2>Delivery details</h2>
+      <form id="checkoutForm" class="form grid2">
+        <label>Full name
+          <input name="name" required maxlength="100" autocomplete="name">
+        </label>
+        <label>Phone or WhatsApp
+          <input name="phone" required minlength="6" maxlength="30" inputmode="tel" autocomplete="tel">
+        </label>
+        <label class="span2">Delivery address
+          <textarea name="address" rows="3" required minlength="5" maxlength="300" autocomplete="street-address"></textarea>
+        </label>
+        <label class="span2">Note to the seller (optional)
+          <input name="note" maxlength="500">
+        </label>
+        <p class="hint span2" id="payNote"></p>
+        <p class="hint span2">Items from different sellers become separate orders.</p>
+        <button class="btn span2" id="placeBtn" type="submit">Place order</button>
+        <p id="msg" class="msg span2" hidden></p>
+      </form>
+    </section>
+
+    <section id="done" class="panel" hidden></section>
+  </main>
+
+  <footer id="footer"></footer>
+  <script type="module" src="cart.js"></script>
+</body>
+</html>
