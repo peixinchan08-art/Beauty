@@ -3,7 +3,7 @@ export const CONFIG = {
   BRAND: "GlowMart",
 
   // Supabase -> Project Settings -> API
-  SUPABASE_URL: "https://vjfjnxtchicsczazkngg.supabase.co/"
+  SUPABASE_URL: "https://vjfjnxtchicsczazkngg.supabase.co"
   SUPABASE_ANON_KEY: "sb_publishable_AL75AWswzAKe_lZASZ2-Fw_f4IwvLnU"
 
   CURRENCY: "RM",
