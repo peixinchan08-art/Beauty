@@ -3,8 +3,8 @@ export const CONFIG = {
   BRAND: "GlowMart",
 
   // Supabase -> Project Settings -> API
-  SUPABASE_URL: "https://YOUR-PROJECT.supabase.co",
-  SUPABASE_ANON_KEY: "YOUR-ANON-KEY", // the public "anon" key. Never paste the service_role key here.
+  SUPABASE_URL: "https://vjfjnxtchicsczazkngg.supabase.co/"
+  SUPABASE_ANON_KEY: "sb_publishable_AL75AWswzAKe_lZASZ2-Fw_f4IwvLnU"
 
   CURRENCY: "RM",
   COUNTRY_CODE: "60", // used to turn 0123456789 into a WhatsApp link (Malaysia = 60)
